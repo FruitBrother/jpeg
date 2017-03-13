@@ -3,7 +3,6 @@ import java.util.Arrays;
 import java.util.Random; 
 public class F3alg {
 	//生成秘密信息
-	int bit_len = 50;//定义秘密信息长度
 	public static int[] secret(int bit_len)
 	{
 		int[] bits_info = new int [bit_len];
@@ -19,8 +18,8 @@ public class F3alg {
 	{
 		int line_pos = 0;
 		int row_pos = 0;
-		int i = 1;
-		while (i<=bit_len)
+		int i = 0;
+		while (i<bit_len)
 		{
 		    if (f3_DCT[line_pos*row+row_pos]!=0)
 		    {

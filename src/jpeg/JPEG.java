@@ -21,11 +21,11 @@ public class JPEG
 			for(int j=0;j<8;j++)
 			{
 				if(i==0)
-					u = Math.sqrt(1/8);
-				else u = Math.sqrt(2/8);
+					u = Math.sqrt(1.0/8);
+				else u = Math.sqrt(2.0/8);
 				if(j==0)
-					v = Math.sqrt(1/8);
-				else v = Math.sqrt(2/8);
+					v = Math.sqrt(1.0/8);
+				else v = Math.sqrt(2.0/8);
 				double temp=0.0;
 				for(int x=0;x<8;x++)
 					for(int y=0;y<8;y++)
@@ -81,7 +81,7 @@ public class JPEG
 		for (int i = 0 ; i<8 ; i++){
 			for (int j = 0; j<8; j++)
 			{
-				System.out.print(a[i][j]);
+				System.out.print(a[i][j]+" ");
 			}
 			System.out.println();
 		}
@@ -91,7 +91,7 @@ public class JPEG
 		for (int i = 0 ; i<8 ; i++){
 			for (int j = 0; j<8; j++)
 			{
-				System.out.print(a[i][j]);
+				System.out.print(a[i][j]+" ");
 			}
 			System.out.println();
 		}
